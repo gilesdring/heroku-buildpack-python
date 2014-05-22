@@ -107,7 +107,7 @@ bpwatch start pre_compile
   source $BIN_DIR/steps/hooks/pre_compile
 bpwatch stop pre_compile
 
-echo "If no requirements given, assume `setup.py develop`."
+echo "If no requirements given, assume 'setup.py develop'."
 if [ ! -f requirements.txt ]; then
   puts-step "No requirements.txt provided; assuming dist package."
   echo "-e ." > requirements.txt
@@ -136,7 +136,7 @@ bpwatch start restore_cache
 bpwatch stop restore_cache
 
 set +e
-echo "Create set-aside `.heroku` folder."
+echo "Create set-aside '.heroku' folder."
 mkdir .heroku &> /dev/null
 set -e
 
